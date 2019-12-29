@@ -77,6 +77,6 @@ func Permutation(s string) []string {
 }
 
 func main() {
-	s := "aabc"
+	s := "aabcxx"
 	fmt.Println(Permutation(s))
 }
