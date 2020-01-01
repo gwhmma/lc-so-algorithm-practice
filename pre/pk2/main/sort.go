@@ -72,7 +72,7 @@ func merge(s []int) []int {
 	}
 
 	mid := len(s) / 2
-	left := s[0:mid]
+	left := s[:mid]
 	right := s[mid:]
 	return mergeSort(merge(left), merge(right))
 }
