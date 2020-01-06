@@ -1,11 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-
-	fmt.Println(int('A'), " ", int('Z'))
-	fmt.Println(int('a'), " ", int('z'))
-
+	s := "12!"
+	s1 := strings.Split(s, "!")
+	fmt.Println(len(s1))
 
 }

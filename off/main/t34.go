@@ -29,6 +29,9 @@ func firstNoRepeat(s string) int {
 	return -1
 }
 
+// map是无序的
+// 所以这题参见 t55的代码
+
 func main() {
 	s := "abcbcbcxchjbkjhkjukp"
 	fmt.Println(firstNoRepeat(s))
