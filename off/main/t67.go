@@ -31,7 +31,7 @@ func cut(n int) int {
 		max := 0
 		for j := 0; j < i-1; j++ {
 			// 如果所有数字都已经使用过 就结束  避免重复
-			if j > len(rs)/2 {
+			if j > n/2 {
 				break
 			}
 			if rs[j]*rs[i-2-j] > max {
