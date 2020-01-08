@@ -28,10 +28,8 @@ func movingCount(rows, cols, k int) int {
 			// 判断当前的位置是否满足要求
 			if parseSum(i, j) <= k {
 				rs++
-				walked[index] = true
-			} else {
-				walked[index] = true
 			}
+			walked[index] = true
 
 			//在继续往4个方向走下去
 			walk(i-1, j)
@@ -42,7 +40,6 @@ func movingCount(rows, cols, k int) int {
 	}
 
 	walk(0, 0)
-
 	return rs
 }
 
