@@ -41,11 +41,7 @@ func movingCount(rows, cols, k int) int {
 		}
 	}
 
-	for i := 0; i < rows; i++ {
-		for j := 0; j < cols; j++ {
-			walk(i, j)
-		}
-	}
+	walk(0, 0)
 
 	return rs
 }
@@ -66,5 +62,5 @@ func parseSum(i, j int) int {
 }
 
 func main() {
-	fmt.Println(movingCount(6,6, 6))
+	fmt.Println(movingCount(6, 6, 6))
 }
